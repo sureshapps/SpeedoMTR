@@ -1,0 +1,333 @@
+#download {
+  margin-top: 72px;
+  @include media-breakpoint-up(sm){
+    margin-top: 96px;
+  }
+  @include media-breakpoint-up(md){
+    margin-top: 135px;
+  }
+
+  .downloadHeader {
+    font-size: 48px;
+    line-height: 58px;
+    @include media-breakpoint-up(sm){
+      font-size: 60px;
+      line-height: 72px;
+    }
+    @include media-breakpoint-up(md){
+      font-size: 76px;
+      line-height: 90px;
+    }
+  }
+
+  .releaseContainer {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include media-breakpoint-up(sm){
+      flex-direction: row;
+      align-items: center;
+    }
+    gap: 12px;
+
+    .releaseVersion {
+      cursor: default;
+    }
+  }
+
+  .downloadTilesFallback {
+    margin-top: 32px;
+    @include media-breakpoint-up(sm){
+      margin-top: 48px;
+    }
+    @include media-breakpoint-up(md){
+      margin-top: 72px;
+    }
+    display: none;
+    @media (pointer:coarse) {
+      display: flex;
+      justify-content: center;
+    }
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 48px;
+    color: $white;
+    background: var(--timerBackground);
+    border-radius: 64px;
+  }
+
+  .downloadContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .down {
+    width: 26px;
+    height: 26px;
+    -webkit-mask-image: url('../images/down.svg');
+    mask-image: url('../images/down.svg');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: white;
+    margin-left:6px;
+    @include media-breakpoint-up(sm){
+      margin-left:8px;
+    }
+  }
+
+  .fallbackContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex: none;
+    padding: 0px 0px 8px;
+    align-self: stretch;
+    flex-grow: 0;
+    width: 100%;
+
+    .direction {
+      font-size: 20px;
+      line-height: 24px;
+      text-align:center;
+    }
+
+    .availableForContainer {
+      display: flex;
+      flex-direction: column;
+      @include media-breakpoint-up(sm){
+        flex-direction: row;
+      }
+      align-items: center;
+      padding: 0px;
+      gap: 12px;
+
+      font-size: 32px;
+      line-height: 38px;
+
+      .icons {
+        gap: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .downloadIcon {
+        width: 38px;
+        height: 38px;
+        background-size: cover;
+        &.macOs {
+          background-image: url('../images/apple.png');
+        }
+        &.linux {
+          background-image: url('../images/linux.png');
+        }
+        &.windows {
+          background-image: url('../images/windows.png');
+        }
+      }
+    }
+  }
+
+  .downloadTilesContainer {
+    margin-top: 32px;
+    @include media-breakpoint-up(sm){
+      margin-top: 48px;
+    }
+    @include media-breakpoint-up(md){
+      margin-top: 72px;
+    }
+    padding: 0px;
+
+    @media (pointer:coarse) {
+      display:none;  
+    }
+
+    .downloadTile {
+      &:first-child {
+        @include media-breakpoint-up(sm){
+          margin-right: 24px;
+          margin-bottom: 24px;
+        }
+        @include media-breakpoint-up(md){
+          margin-right: 32px;
+          margin-bottom: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        @include media-breakpoint-up(md){
+          margin-right: 0px;
+        }
+      }
+      color: $white;
+      padding: 32px;
+      border-radius: 48px;
+      width: 100%;
+      display: block;
+      box-sizing: border-box;
+      margin-bottom:24px;
+      @include media-breakpoint-up(sm){
+        width: calc(50% - 15px);
+        padding: 56px;
+        height: unset;
+        display: inline-table;
+        border-radius: 100px;
+        margin-bottom:0px;
+      }
+      @include media-breakpoint-up(md){
+        width: calc(33.3333% - 25px);
+        margin-bottom: 0px;
+        margin-right: 32px;
+      }
+
+      .divider {
+        margin-top: 20px;
+        width: 100%;
+        height: 2px;
+        background-color: $white;
+      }
+
+      .downloadPlatform {
+        margin-top: 24px;
+        font-size: 32px;
+        line-height: 38px;
+        @include media-breakpoint-up(sm){
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+
+      .downloadType {
+        font-size: 20px;
+        line-height: 24px;
+
+        &.apple {
+          @include media-breakpoint-up(sm){
+            font-size: 16px;
+          }
+          @include media-breakpoint-up(md){
+            font-size: 16px;
+          }
+          @include media-breakpoint-up(mdlg){
+            font-size: 20px;
+          }
+        }
+      }
+
+      .downloadIcon {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        background-size: cover;
+      }
+
+      &.macOs {
+        background: $orange;
+
+        .downloadIcon {
+          background-image: url('../images/apple.png');
+        }
+      }
+      &.windows {
+        background: $blue;
+
+        .downloadIcon {
+          background-image: url('../images/windows.png');
+        }
+      }
+      &.linux {
+        background: $purple;
+
+        .downloadIcon {
+          background-image: url('../images/linux.png');
+        }
+      }
+
+      .downloadButton {
+        margin-top: 32px;
+        position: relative;
+        border: 2px solid $white;
+        border-radius: 25px;
+        background-color: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.4s;
+        overflow: hidden;
+        width: fit-content;
+        font-size: 20px;
+        @include media-breakpoint-up(sm){
+          font-size: 18px;
+        }
+        @include media-breakpoint-up(smmd){
+          font-size: 24px;
+        }
+        @include media-breakpoint-up(md){
+          font-size: 18px;
+        }
+        @include media-breakpoint-up(mdlg){
+          font-size: 24px;
+        }
+      
+        &.orange, a {
+          box-sizing: border-box;
+          padding: 13px 24px;
+          width: fit-content;
+          height: 100%;
+          display: inline-block;
+          text-decoration: none;
+          overflow:visible;
+          color: $white;
+          transition: all 0.4s;
+          // border-radius: 25px;
+          &.active, &:hover {
+            background-color: $white;
+            .down {
+              background-color: $orange;
+              transition: all 0.5s;
+            }
+            &.orange {
+              color: $orange;
+            }
+            &.blue {
+              color: $blue;
+            }
+            &.purple {
+              color: $purple;
+            }
+          }
+        }
+      }
+
+      .downloadMenu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        width: max-content;
+        position: absolute;
+        margin-top: 20px;
+        left: 0;
+
+        &.visible {
+          display: flex;
+        }
+
+        .downloadText {
+          a {
+            color: $black;
+            &:hover {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}

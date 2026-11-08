@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speedometer - Eth Node</title>
+  <meta name="title" content="Speedometer: Eth Node">
+  <meta name="description" content="One command to answer Can I run an Ethereum Node?">
+  <meta content="Speedometer: Eth Node" property="og:title" />
+  <meta content="Test your the speed of your setup to see if you can run a node" property="og:description" />
+  <!-- increment the query parameter number when changing the image (prevents unwanted caching) -->
+  <meta content="https://raw.githubusercontent.com/NiceNode/speedometer-website/main/src/images/application-eth-node-dark-uncropped.png?1" property="og:image" />
+  <meta content="Speedometer: Eth Node" property="twitter:title" />
+  <meta content="One command to answer Can I run an Ethereum Node?" property="twitter:description" />
+  <meta content="https://raw.githubusercontent.com/NiceNode/speedometer-website/main/src/images/application-eth-node-dark-uncropped.png?1" property="twitter:image" />
+  <meta property="og:type" content="website" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏱️</text></svg>">
+  <!-- <link href="#" rel="apple-touch-icon" /> -->
+</head>
+<body class="light">
+  <div id="topOfPage"></div>
+  <header id="test">
+    <div class="logo"><a href="#topOfPage"></a></div>
+    <!-- <div>speedometer<a href="#topOfPage"></a></div> -->
+    <nav>
+      <!-- <ul class="links">
+        <li class="requirements"><a href="#requirements">Requirements</a></li>
+        <li class="download"><a href="#download">Download</a></li>
+        <li class="support"><a href="#support">Support</a></li>
+        <li class="faq"><a href="#faq">FAQ</a></li>
+      </ul> -->
+    </nav>
+    <ul class="icons">
+      <li class="twitter"><a href="https://twitter.com/nicenodeapp" target="_blank" rel="noopener noreferrer"></a></li>
+      <li class="github"><a href="https://github.com/NiceNode/speedometer" target="_blank" rel="noopener noreferrer"></a></li>
+      <!-- <li class="discord"><a href="https://discord.gg/k3dpYU4Pn9" target="_blank" rel="noopener noreferrer"></a></li> -->
+      <li class="switch"></li>
+    </ul>
+  </header>
+  <main>
+    <section id="top">
+      <div class="headerTextContainer">
+        <h1 class="headline-primary">Can I run an Ethereum node?</h1>
+        <!-- <div class="headline-secondary dynapuff">One command to check</div> -->
+        <!-- <h2 class="header">Docker and container setups can .</div> -->
+      </div>
+      <div class="commands">
+        <div class="cmdContainer">
+          <div class="cmdText">
+            docker run -it ghcr.io/nicenode/speedometer -r eth-node
+          </div>
+          <div id="dockerRunEthNodeCmdCopy" class="cmdCopyBtn">📋</div>
+        </div>
+        <div class="learn"><a href="https://podman-desktop.io/">Podman</a> or <a href="https://www.docker.com/">Docker</a> required</div>
+      </div>
+      <div class="graphic">
+        <div class="application ethNode">
+          <!-- <div class="comingSoon"></div> -->
+        </div>
+      </div>
+      <div class="commands">
+        <div class="cmdContainer">
+          <div class="cmdText">
+            docker run -it ghcr.io/nicenode/speedometer -r eth-node
+          </div>
+          <div id="dockerRunEthNodeCmdCopy" class="cmdCopyBtn">📋</div>
+        </div>
+        <div class="learn">Podman</div>
+        <br/>
+        <div class="cmdContainer">
+          <div class="cmdText">
+            podman run -t ghcr.io/nicenode/speedometer -r eth-node
+          </div>
+          <div id="podmanRunEthNodeCmdCopy" class="cmdCopyBtn">📋</div>
+        </div>
+  
+        <div class="learn">Output JSON to use in code</div>
+        <br/>
+        <div class="cmdContainer smallCmdContainer">
+          <div class="cmdText">
+            docker run ghcr.io/nicenode/speedometer -r eth-node -f json
+          </div>
+          <div id="dockerRunEthNodeJsonCmdCopy" class="cmdCopyBtn">📋</div>
+        </div>
+        <div class="learn">Other commands</div>
+        <br/>
+        <div class="cmdContainer smallCmdContainer">
+          <div class="cmdText">
+            docker run -it ghcr.io/nicenode/speedometer --help
+          </div>
+          <div id="dockerRunHelpCmdCopy" class="cmdCopyBtn">📋</div>
+        </div>
+        <div class="learn">
+          Learn more on <a class="link" target="_blank" rel="noopener noreferrer" href="https://github.com/NiceNode/speedometer/">our Github</a>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="commands">
+      <div class="cmdContainer"><div class="cmdText">docker run ghcr.io/nicenode/speedometer</div><div id="dockerRunCmdCopy" class="cmdCopyBtn">📋</div></div>
+      <div class="cmdContainer"><div class="cmdText">podman run ghcr.io/nicenode/speedometer</div><div id="podmanRunCmdCopy" class="cmdCopyBtn">📋</div></div>
+
+      <div class="learn">
+        Learn more on <a class="link" target="_blank" rel="noopener noreferrer" href="https://github.com/NiceNode/speedometer/">our Github</a>
+      </div>
+    </section> -->
+    <!-- <section id="statement">
+      <p>By running a node you become part of a global movement to decentralize a world of information.</p>
+      <p>Prevent leaking your personal data to third party nodes. Ensure access when you need it, and don't be censored.
+        Decentralization starts with you. Voice your choice, help your peers.</p>
+      <div class="learn">
+        Learn more on <a class="link" target="_blank" rel="noopener noreferrer" href="https://ethereum.org/en/run-a-node/">ethereum.org</a>
+      </div>
+    </section> -->
+    <!-- <section id="features">
+      <h3>Optimized for a nice user experience</h3>
+      <div class="carousel">
+        <div class="accordion-carousel">
+          <div class="accordionContainer">
+            <div id="accordion-1" class="accordion-item">
+              <div class="accordion-headline pink">Easy setup</div>
+              <div class="accordion-description" id="description-1">Install and set up a node with an actual interface in a couple of guided steps. You won’t have to touch a command line interface at all.</div>
+              <div class="timer-background">
+                <div class="timer-bar timer-1"></div>
+              </div>
+            </div>
+            <div id="accordion-2" class="accordion-item">
+              <div class="accordion-headline yellow">System checker</div>
+              <div class="accordion-description" id="description-2" style="display: none;">When adding a node we do a little check to see if your computer hardware meets the requirements to run the selected clients.</div>
+              <div class="timer-background">
+                <div class="timer-bar timer-2" style="display: none;"></div>
+              </div>
+            </div>
+            <div id="accordion-3" class="accordion-item">
+              <div class="accordion-headline orange">Monitor clients</div>
+              <div class="accordion-description" id="description-3" style="display: none;">Keep an eye on the synchronisation process and check how your node impacts your hardware and network usage across different timeframes.</div>
+              <div class="timer-background">
+                <div class="timer-bar timer-3" style="display: none;"></div>
+              </div>
+            </div>
+            <div id="accordion-4" class="accordion-item">
+              <div class="accordion-headline blue">Connect your wallet</div>
+              <div class="accordion-description" id="description-4" style="display: none;">Optionally you can set your own node as RPC instead of the default provided by your wallet.</div>
+              <div class="timer-background">
+                <div class="timer-bar timer-4" style="display: none;"></div>
+              </div>
+            </div>
+          </div>
+          <div id="photoContainer" class="ui-01">
+            <div class="photo">
+              <img src="./images/ui-01.png" class="photo" id="photo-1" style="display: block;">
+              <img src="./images/ui-02.png" class="photo" id="photo-2" style="display: none;">
+              <img src="./images/ui-03.png" class="photo" id="photo-3" style="display: none;">
+              <img src="./images/ui-04.png" class="photo" id="photo-4" style="display: none;">
+            </div>
+            <div class="left-arrow" id="left-arrow"><div class="left"></div></div>
+            <div class="right-arrow" id="right-arrow"><div class="right"></div></div>
+          </div>
+          <div class="responsiveTimer">
+            <div class="timer-background">
+              <div class="timer-bar timer-1"></div>
+            </div>
+            <div class="timer-background">
+              <div class="timer-bar timer-2" style="display: none;"></div>
+            </div>
+            <div class="timer-background">
+              <div class="timer-bar timer-3" style="display: none;"></div>
+            </div>
+            <div class="timer-background">
+              <div class="timer-bar timer-4" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="requirements">
+      <h3><span class="slant">Node</span><br>Requirements</h3>
+      <div class="table">
+        <div class="table-row">
+          <div class="table-cell part">Part</div>
+          <div class="table-cell">Minimum<span class="asteriskContainer"><img class="asterisk" src="./images/Asterisk.png"></span></div>
+          <div class="table-cell">Recommended</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell part">● Processor</div>
+          <div class="table-cell">Dual Core</div>
+          <div class="table-cell">Quad Core+</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell part">● Memory</div>
+          <div class="table-cell">8 GB RAM</div>
+          <div class="table-cell">16 GB RAM</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell part">● Storage</div>
+          <div class="table-cell">1 TB SSD (<a href="https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038" class="link">10k+ IOPS</a>)</div>
+          <div class="table-cell">2 TB SSD (<a href="https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038" class="link">10k+ IOPS</a>)</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell part">● Network</div>
+          <div class="table-cell">10 MBit/s with large data cap</div>
+          <div class="table-cell">25 MBit/s with large data cap</div>
+        </div>
+      </div>
+      <div class="asteriskNote">
+        <span class="asteriskContainer">
+          <img class="asterisk" src="./images/Asterisk.png">
+        </span>
+        Individual client recommendations may vary. We provide suggestions while setting up your node.
+      </div>
+    </section>
+    <!-- <section id="download">
+      <h3 class="downloadHeader">Run a node and become part of a global revolution.</h3>
+      <div class="releaseContainer">
+        <div class="button small active releaseVersion">Alpha in development</div>
+        <a class="button small" href="https://github.com/NiceNode/speedometer/releases" target="_blank" rel="noopener noreferrer">Follow on Github</a>
+      </div>
+      <div class="downloadTilesFallback">
+        <div class="fallbackContent">
+          <div class="availableForContainer">
+            <div class="availableFor">Soon available for</div>
+            <div class="icons">
+              <div class="downloadIcon macOs"></div>
+              <div class="downloadIcon windows"></div>
+              <div class="downloadIcon linux"></div>
+            </div>
+          </div> -->
+          <!-- <div class="direction">
+            Open this website on a desktop computer to download.
+          </div> -->
+        <!-- </div>
+      </div>
+      <div class="downloadTilesContainer">
+        <div class="downloadTile macOs">
+          <div class="downloadIcon"></div>
+          <div class="divider"></div>
+          <div class="downloadPlatform">MacOS</div>
+          <div class="downloadType apple">Apple Silicon and Intel</div>
+          <div class="downloadButton"><a class="downloadLink orange" href="#">Coming soon</a></div>
+        </div> -->
+        <!-- <div class="downloadTile macOs">
+          <div class="downloadIcon"></div>
+          <div class="divider"></div>
+          <div class="downloadPlatform">MacOS</div>
+          <div class="downloadType apple">Apple Silicon and Intel</div>
+          <div class="downloadButton orange">
+            <div class="downloadContainer">Download<div class="down"></div></div>
+            <div class="downloadMenu">
+              <div class="downloadText"><a href="#">Apple Silicon</a></div>
+              <div class="downloadText"><a href="#">Intel Chip</a></div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="downloadTile windows">
+          <div class="downloadIcon"></div>
+          <div class="divider"></div>
+          <div class="downloadPlatform">Windows</div>
+          <div class="downloadType apple">64-bit</div>
+          <div class="downloadButton"><a class="downloadLink blue" href="#">Coming soon</a></div>
+        </div>
+        <div class="downloadTile linux">
+          <div class="downloadIcon"></div>
+          <div class="divider"></div>
+          <div class="downloadPlatform">Linux</div>
+          <div class="downloadType apple">64-bit</div>
+          <div class="downloadButton"><a class="downloadLink purple" href="#">Coming soon</a></div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section id="support">
+      <h3>Support</h3>
+      <p>NiceNode is a community made <a class="link" href="https://github.com/NiceNode/speedometer" target="_blank" rel="noopener noreferrer">open source</a> project.</p>
+      <p>Feedback or contributions are greatly appreciated. Feel free to join us on <a class="link" href="https://discord.gg/k3dpYU4Pn9" target="_blank" rel="noopener noreferrer">discord</a> if you need help or leave a <span class="dynapuff">gm</span>.</p>
+      <p>Proudly supported in the past by the <span class="ethereumFoundation"></span> Ethereum Foundation, <span class="gitcoinGrants"></span> Gitcoin Grants, <span class="cityDao"></span> CityDAO, and <span class="ethStaker"></span> EthStaker.</p>
+    </section>
+    <section id="faq">
+      <h3>Frequently asked</h3>
+      <button class="accordion pink">
+        <span class="dot">●</span>
+        <span class="question">Why should I run a node?</span>
+        <span class="spacer"></span>
+        <span class="arrow">↓</span>
+      </button>
+      <div class="panel">
+        When running a synced node you are improving the health and decentralisation of the network by storing a copy of the chain on your hard drive and seeding it to other nodes on the network. Running just a node is purely altruistic without monetary rewards. However, when pointing your wallet provider, like MetaMask, to use your own node as data provider, you can benefit by preserving your privacy and security.
+      </div>
+      <button class="accordion yellow">
+        <span class="dot">●</span>
+        <span class="question">How long will it take to sync a node?</span>
+        <span class="spacer"></span>
+        <span class="arrow">↓</span>
+      </button>
+      <div class="panel">
+        Syncing a full node may take a few days, depending on your bandwidth and hardware.
+      </div>
+      <button class="accordion orange">
+        <span class="dot">●</span>
+        <span class="question">What types of nodes do you support?</span>
+        <span class="spacer"></span>
+        <span class="arrow">↓</span>
+      </button>
+      <div class="panel">
+        NiceNode is currently focused on running Ethereum nodes but is planning and designing to support multiple networks. There is currently one supported sync type for Ethereum nodes:
+        <ol>
+          <li>Full nodes with Snap Sync by default</li>
+          <li><del>Archive nodes</del> (on the roadmap)</li>
+        </ol>
+      </div>
+      <button class="accordion blue">
+        <span class="dot">●</span>
+        <span class="question">Do I need 32 ETH to run a node?</span>
+        <span class="spacer"></span>
+        <span class="arrow">↓</span>
+      </button>
+      <div class="panel">
+        No, you don’t need 32 ETH to run an Ethereum node, you can run a full node with zero ETH. The 32 ETH requirement is to be a validator in Ethereum’s proof-of-stake (PoS) consensus mechanism, also referred to as “Staking” which is currently a feature planned for the future.
+      </div>
+      <button class="accordion purple">
+        <span class="dot">●</span>
+        <span class="question">Can I stake my ETH with NiceNode?</span>
+        <span class="spacer"></span>
+        <span class="arrow">↓</span>
+      </button>
+      <div class="panel">
+        No, however this is a feature we’d like to add sooner rather than later. Currently we’re focusing on making sure that running a node with NiceNode is a stable and pleasant experience before adding additional complexity.
+      </div>
+      <button class="accordion pink">
+        <span class="dot">●</span>
+        <span class="question">What's the difference with DAppNode?</span>
+        <span class="spacer"></span>
+        <span class="arrow">↓</span>
+      </button>
+      <div class="panel">
+        DAppNode takes a different approach and requires users to install a new Operating System. NiceNode works with what’s installed on your computer right now. Once you download and run NiceNode you are pretty much good to go!
+      </div>
+      <button class="accordion yellow">
+        <span class="dot">●</span>
+        <span class="question">What happens when I get disconnected from the internet?</span>
+        <span class="spacer"></span>
+        <span class="arrow">↓</span>
+      </button>
+      <div class="panel">
+        Nothing really, your node will stop syncing and resume once reconnected. Since NiceNode currently does not support staking there is no penalty.
+      </div>
+      <button class="accordion orange">
+        <span class="dot">●</span>
+        <span class="question">Do you plan on adding other networks in the future?</span>
+        <span class="spacer"></span>
+        <span class="arrow">↓</span>
+      </button>
+      <div class="panel">
+        We sure do! Join us on <a class="link" href="https://discord.gg/k3dpYU4Pn9" target="_blank" rel="noopener noreferrer">discord</a> and let us know what networks you would like to see added first.
+      </div>
+    </section> -->
+  </main>
+  <footer>
+    <div class="logoContainer">
+      <!-- <div class="logo"></div> -->
+      <div class="text">Speedometer</div>
+      <div class="learn center">developed by <a href="https://nicenode.xyz">NiceNode</a></div>
+    </div>
+    <div class="social-links">
+        <!-- <a class="button small" href="https://twitter.com/nicenodeapp" target="_blank" rel="noopener noreferrer">Twitter</a> -->
+        <!-- <a class="button small" href="https://discord.gg/k3dpYU4Pn9" target="_blank" rel="noopener noreferrer">Discord</a> -->
+        <a class="button small" href="https://github.com/NiceNode/speedometer" target="_blank" rel="noopener noreferrer">Github</a>
+    </div>
+    <div class="copyright">© Copyright 2023 by NiceNode.</div>
+  </footer>
+</body>
+</html>

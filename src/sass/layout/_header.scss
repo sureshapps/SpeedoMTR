@@ -1,0 +1,220 @@
+header {
+  top:0;
+  box-sizing: border-box;
+  background-color: var(--bgColor);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  height: 62px;
+  z-index: 1;
+  @include media-breakpoint-up(sm){
+    padding: 16px 24px;
+  }
+  @include media-breakpoint-up(md){
+    padding: 32px 48px;
+    height: 96px;
+  }
+  gap: 40px;
+  color: var(--textColor);
+  transition: all 0.4s;
+
+  &.minimized {
+    padding: 16px;
+    @include media-breakpoint-up(sm){
+      padding: 16px 24px;
+    }
+    @include media-breakpoint-up(md){
+      padding: 16px 48px;
+    }
+    height: 62px;
+    position: sticky;
+    background-color: var(--bgMinimized);
+    backdrop-filter: blur(30px);
+    transition: all 0.4s;
+
+    // .logo {
+    //   @include media-breakpoint-up(md){
+    //     width: 132px;
+    //     height: 30px;
+    //     background-size: 132px 30px;
+    //     background-image: var(--logoMinimizedImage);
+    //   }
+    // }
+
+    nav {
+      font-size: 20px;
+      line-height: 24px;
+      transition: all 0.4s;
+    }
+
+    .icons {
+      li {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    
+  }
+
+  .logo {
+    background-image: var(--logoMobileImage);
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    // @include media-breakpoint-up(sm){
+    //   background-image: var(--logoImage);
+    //   background-size: 152px 32px;
+    //   width: 152px;
+    //   height: 32px;
+    // }
+    @include media-breakpoint-up(md){
+      // padding: 16px 48px;
+    }
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: all 0.1s;
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+    }
+  }
+
+  nav {
+    order: 1;
+    flex-grow: 1;
+    font-size: 24px;
+
+    .links {
+      display:none;
+      @include media-breakpoint-up(md){
+        display:flex;
+        gap: 33px;
+      }
+      @include media-breakpoint-up(mdlg){
+        gap: 48px;
+      }
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      flex: none;
+  
+      .requirements {
+        a {
+          @media (hover: hover) {
+            &:hover {
+              color: var(--requirementsColor);
+            }
+          }
+        }
+      }
+  
+      .download {
+        a {
+          @media (hover: hover) {
+            &:hover {
+              color: var(--downloadColor);
+            }
+          }
+        }
+      }
+  
+      .support {
+        a {
+          @media (hover: hover) {
+            &:hover {
+              color: var(--supportColor);
+            }
+          }
+        }
+      }
+  
+      .faq {
+        a {
+          @media (hover: hover) {
+            &:hover {
+              color: var(--faqColor);
+            }
+          }
+        }
+      }
+  
+      li {
+        cursor: pointer;
+        a {
+          color: var(--textColor);
+          text-decoration: none;
+          display:inline-block;
+          width:100%;
+          height:100%;
+        }
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 28px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    .twitter {
+      -webkit-mask-image: url('../images/twitter.svg');
+      mask-image: url('../images/twitter.svg');
+    }
+    
+    .github {
+      -webkit-mask-image: url('../images/github.svg');
+      mask-image: url('../images/github.svg');
+    }
+
+    .discord {
+      -webkit-mask-image: url('../images/discord.svg');
+      mask-image: url('../images/discord.svg');
+    }
+
+    .switch {
+      -webkit-mask-image: var(--switchIcon);
+      mask-image: var(--switchIcon);
+      @media (hover: hover) {
+        &:hover {
+          background-color: var(--switchColor);
+        }
+      }
+    }
+
+    li {
+      background-color: var(--textColor);
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      width: 26px;
+      height: 26px;
+      @include media-breakpoint-up(md){
+        width: 30px;
+        height: 30px;
+      }
+      cursor: pointer;
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: var(--iconColor);
+        }
+      }
+
+      a {
+        display:inline-block;
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+}
